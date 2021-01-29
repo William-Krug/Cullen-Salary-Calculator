@@ -17,10 +17,10 @@ Additional README details can be found [here](https://github.com/PrimeAcademy/re
   - [x] employee job title
   - [x] employee annual salary
 - [ ] Submit button
-  - [ ] captures data from form and stores in variables
-  - [ ] creates employee object
-  - [ ] pushes object onto array
-  - [ ] calculate monthly costs
+  - [x] captures data from form and stores in variables
+  - [x] creates employee object
+  - [x] pushes object onto array
+  - [x] calculate monthly costs
   - [ ] render information to DOM
   - [ ] clear input fields
 - [ ] calculate monthly costs
