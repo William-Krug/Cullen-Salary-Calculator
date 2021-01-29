@@ -27,6 +27,8 @@ function addEmployee(event) {
   };
   employees.push(employee);
   calculateMonthlyCosts(employees);
+  displayEmployees(employees);
+
   if (verbose) {
     console.log('in addEmployee()');
     console.log('\t$empFirstName:', $empFirstName);
@@ -50,4 +52,24 @@ function calculateMonthlyCosts(employeeArray) {
     }
   }
   return sum;
+}
+
+function displayEmployees(employeeList) {
+  let $employeeTable = $('#employeeTable');
+  $employeeTable.empty();
+  for (employee of employeeList) {
+    $employeeTable.append(`
+      <tr>
+        <td>${employee.firstName}</td>
+        <td>${employee.lastName}</td>
+        <td>${employee.employeeID}</td>
+        <td>${employee.title}</td>
+        <td>${employee.annualSalary}</td>
+      <tr>
+    `);
+  }
+
+  if (verbose) {
+    console.log('in displayEmployees');
+  }
 }
