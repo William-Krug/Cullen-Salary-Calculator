@@ -10,12 +10,12 @@ Additional README details can be found [here](https://github.com/PrimeAcademy/re
 
 ## To Do
 
-- [ ] Input Form
-  - [ ] employee first name
-  - [ ] employee last name
-  - [ ] employee ID number
-  - [ ] employee job title
-  - [ ] employee annual salary
+- [x] Input Form
+  - [x] employee first name
+  - [x] employee last name
+  - [x] employee ID number
+  - [x] employee job title
+  - [x] employee annual salary
 - [ ] Submit button
   - [ ] captures data from form and stores in variables
   - [ ] creates employee object
@@ -28,3 +28,10 @@ Additional README details can be found [here](https://github.com/PrimeAcademy/re
   - [ ] red background if monthly costs exceed $20,000
 - [ ] create table
 - [ ] delete button that removes employee from DOM
+
+## Stretch To Do
+
+- [ ] CSS Styling
+- [ ] update total after employee is "deleted"
+  - [ ] .text() and .data() are helpful
+- [ ] make input fields required
