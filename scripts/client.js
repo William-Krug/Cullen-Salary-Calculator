@@ -130,6 +130,7 @@ function clearInputs() {
 
 /**
  * Function calculates the monthly costs based on employees' annual salary
+ * Monthly cost is unedited float
  * @param {*} annSal
  */
 function calculateMonthlyCosts(annSal) {
@@ -146,9 +147,10 @@ function calculateMonthlyCosts(annSal) {
 
 /**
  * Function appends the provided dollar value to the DOM under "monthlyCosts"
+ * If dollar value is greater than $20,000, the background color is changed to red
  * @param {*} monthlyCosts
  */
-function displayMonthlyCosts(monthlyCosts = 73000) {
+function displayMonthlyCosts(monthlyCosts = 6083.33) {
   // Format monthly costs for US currency
   const monthlyCostsDollar = dollarFormat.format(monthlyCosts);
   // Target HTML element
@@ -157,6 +159,10 @@ function displayMonthlyCosts(monthlyCosts = 73000) {
   $monthlyTotal.empty();
   // Send calculated monthly costs to DOM
   $monthlyTotal.append(monthlyCostsDollar);
+
+  if (monthlyCosts > 20000) {
+    $monthlyTotal.css('background-color', '#FF0000');
+  }
 
   // Debugging and Testing script
   if (verbose) {

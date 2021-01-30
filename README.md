@@ -25,9 +25,9 @@ Additional README details can be found [here](https://github.com/PrimeAcademy/re
   - [x] clear input fields
 - [ ] calculate monthly costs
   - [x] calculate monthly costs
-  - [ ] append to DOM
-  - [ ] red background if monthly costs exceed $20,000
-- [ ] create table
+  - [x] append to DOM
+  - [x] red background if monthly costs exceed $20,000
+- [x] create table
 - [ ] delete button that removes employee from DOM
 
 ## Stretch To Do
