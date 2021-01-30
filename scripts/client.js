@@ -11,13 +11,23 @@ function onReady() {
   $(document).on('click', '#addEmpSubmitBtn', addEmployee);
 }
 
+/**
+ * Function is an event handler to be executed with the "Add Employee" button is clicked
+ * Employee object is created with their name, id, title and salary
+ * Employee object is added to employee list, annual cost is calculated,
+ * DOM table is updated and the form inputs are cleared
+ * @param {*} event
+ */
 function addEmployee(event) {
+  // Prevent the "Add Employee" button from refreshing the page when clicked
   event.preventDefault();
+  // Capture inputs from DOM
   const $empFirstName = $('#firstNameInput').val();
   const $empLastName = $('#lastNameInput').val();
   const $empID = $('#employeeIDInput').val();
   const $empTitle = $('#employeeTitleInput').val();
   const $empAnnSal = Number($('#annualSalaryInput').val());
+  // Create employee object
   const employee = {
     firstName: $empFirstName,
     lastName: $empLastName,
@@ -25,11 +35,14 @@ function addEmployee(event) {
     title: $empTitle,
     annualSalary: $empAnnSal,
   };
+  // Add employee object to employee list
   employees.push(employee);
-  calculateMonthlyCosts(employees);
+  // Helper functions called
+  calculateAnnualCosts(employees);
   displayEmployees(employees);
   clearInputs();
 
+  // Debugging and Testing script
   if (verbose) {
     console.log('in addEmployee()');
     console.log('\t$empFirstName:', $empFirstName);
@@ -42,22 +55,38 @@ function addEmployee(event) {
   }
 }
 
-function calculateMonthlyCosts(employeeArray) {
-  let sum = 0;
+/**
+ * Function calculates the annual cost for all employees based on their annual salary
+ * @param {*} employeeArray
+ */
+function calculateAnnualCosts(employeeArray) {
+  // Declare and initialize the starting total
+  let total = 0;
+  // Loop through provided list to add each employee's annual salary to total
   for (let employee of employeeArray) {
-    sum += employee.annualSalary;
+    total += employee.annualSalary;
+
+    // Debugging and Testing script
     if (verbose) {
-      console.log('in calculateMonthlyCosts()');
+      console.log('in calculateAnnualCosts()');
       console.log('\tannual salary:', employee.annualSalary);
-      console.log('\tsum:', sum);
+      console.log('\ttotal:', total);
     }
   }
-  return sum;
+
+  return total;
 }
 
+/**
+ * Function displays the provided list to the DOM as a row in the table
+ * @param {*} employeeList
+ */
 function displayEmployees(employeeList) {
+  // Taget HTML element
   let $employeeTable = $('#employeeTable');
+  // Clear existing table data
   $employeeTable.empty();
+  // Loop through provided list and to append data to table
   for (employee of employeeList) {
     $employeeTable.append(`
       <tr>
@@ -70,18 +99,31 @@ function displayEmployees(employeeList) {
     `);
   }
 
+  // Debugging and Testing script
   if (verbose) {
     console.log('in displayEmployees');
   }
 }
 
+/**
+ * Function clears the Add Employee input form
+ */
 function clearInputs() {
+  // Reset input values
   $('#firstNameInput').val('');
   $('#lastNameInput').val('');
   $('#employeeIDInput').val('');
   $('#employeeTitleInput').val('');
   $('#annualSalaryInput').val('');
+
+  // Debugging and Testing script
   if (verbose) {
     console.log('in clearInputs()');
   }
 }
+
+/**
+ *
+ * @param {*} annSal
+ */
+function calculateMonthlyCosts(annSal) {}
