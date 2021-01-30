@@ -6,8 +6,14 @@ const verbose = true;
 
 const employees = [];
 
+const dollarFormat = new Intl.NumberFormat('en-US', {
+  style: 'currency',
+  currency: 'USD',
+});
+
 function onReady() {
   console.log('We have jQuery');
+  displayMonthlyCosts();
   $(document).on('click', '#addEmpSubmitBtn', addEmployee);
 }
 
@@ -38,7 +44,7 @@ function addEmployee(event) {
   // Add employee object to employee list
   employees.push(employee);
   // Helper functions called
-  calculateAnnualCosts(employees);
+  calculateMonthlyCosts(calculateAnnualCosts(employees));
   displayEmployees(employees);
   clearInputs();
 
@@ -94,7 +100,7 @@ function displayEmployees(employeeList) {
         <td>${employee.lastName}</td>
         <td>${employee.employeeID}</td>
         <td>${employee.title}</td>
-        <td>${employee.annualSalary}</td>
+        <td>${dollarFormat.format(employee.annualSalary)}</td>
       <tr>
     `);
   }
@@ -123,7 +129,39 @@ function clearInputs() {
 }
 
 /**
- *
+ * Function calculates the monthly costs based on employees' annual salary
  * @param {*} annSal
  */
-function calculateMonthlyCosts(annSal) {}
+function calculateMonthlyCosts(annSal) {
+  const monthlyTotal = annSal / 12;
+  displayMonthlyCosts(monthlyTotal);
+
+  // Debugging and Testing script
+  if (verbose) {
+    console.log('in calculateMonthlyCosts');
+    console.log('\tannual salary passed in:', annSal);
+    console.log('\tcalculated monthly costs:', monthlyTotal);
+  }
+}
+
+/**
+ * Function appends the provided dollar value to the DOM under "monthlyCosts"
+ * @param {*} monthlyCosts
+ */
+function displayMonthlyCosts(monthlyCosts = 73000) {
+  // Format monthly costs for US currency
+  const monthlyCostsDollar = dollarFormat.format(monthlyCosts);
+  // Target HTML element
+  const $monthlyTotal = $('#monthlyCost');
+  // Clear existing value
+  $monthlyTotal.empty();
+  // Send calculated monthly costs to DOM
+  $monthlyTotal.append(monthlyCostsDollar);
+
+  // Debugging and Testing script
+  if (verbose) {
+    console.log('in displayMonthlyCosts()');
+    console.log('\tmonthly cost in:', monthlyCosts);
+    console.log('\tmonthly costs out:', monthlyCostsDollar);
+  }
+}
