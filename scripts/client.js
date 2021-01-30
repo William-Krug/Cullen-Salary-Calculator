@@ -101,6 +101,7 @@ function displayEmployees(employeeList) {
         <td>${employee.employeeID}</td>
         <td>${employee.title}</td>
         <td>${dollarFormat.format(employee.annualSalary)}</td>
+        <td></td>
       <tr>
     `);
   }
@@ -162,6 +163,11 @@ function displayMonthlyCosts(monthlyCosts = 6083.33) {
 
   if (monthlyCosts > 20000) {
     $monthlyTotal.css('background-color', '#FF0000');
+
+    // Debugging and Testing script
+    if (verbose) {
+      console.log('\tmonthly costs exceeds $20,000');
+    }
   }
 
   // Debugging and Testing script
