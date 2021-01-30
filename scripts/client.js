@@ -28,6 +28,7 @@ function addEmployee(event) {
   employees.push(employee);
   calculateMonthlyCosts(employees);
   displayEmployees(employees);
+  clearInputs();
 
   if (verbose) {
     console.log('in addEmployee()');
@@ -71,5 +72,16 @@ function displayEmployees(employeeList) {
 
   if (verbose) {
     console.log('in displayEmployees');
+  }
+}
+
+function clearInputs() {
+  $('#firstNameInput').val('');
+  $('#lastNameInput').val('');
+  $('#employeeIDInput').val('');
+  $('#employeeTitleInput').val('');
+  $('#annualSalaryInput').val('');
+  if (verbose) {
+    console.log('in clearInputs()');
   }
 }

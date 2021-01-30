@@ -21,8 +21,8 @@ Additional README details can be found [here](https://github.com/PrimeAcademy/re
   - [x] creates employee object
   - [x] pushes object onto array
   - [x] calculate monthly costs
-  - [ ] render information to DOM
-  - [ ] clear input fields
+  - [x] render information to DOM
+  - [x] clear input fields
 - [ ] calculate monthly costs
   - [ ] append to DOM
   - [ ] red background if monthly costs exceed $20,000
