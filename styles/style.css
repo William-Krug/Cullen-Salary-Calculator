@@ -26,6 +26,9 @@ h2 {
   margin: 20px;
 }
 
+#addEmployeeForm {
+}
+
 .add-inputs {
   margin-bottom: 25px;
 }
@@ -38,7 +41,10 @@ h2 {
 }
 
 .add-submit {
-  display: flex;
+  display: inline-flex;
+  justify-content: flex-end;
+  width: auto;
+  text-align: right;
 }
 
 #addEmpSubmitBtn {
@@ -46,7 +52,6 @@ h2 {
   background-color: #1651fa;
   border-radius: 5px;
   color: #ffffff;
-  justify-content: flex-end;
 }
 
 .display-employees {
@@ -107,4 +112,9 @@ thead th {
   border: 1px solid #000000;
   border-collapse: collapse;
   text-align: center;
+}
+
+.monthly-cost {
+  margin-top: 40px;
+  text-align: right;
 }
