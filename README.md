@@ -1,7 +1,6 @@
 ![MIT LICENSE](https://img.shields.io/github/license/William-Krug/Cullen-Salary-Calculator.svg?style=flat-square)
 ![REPO SIZE](https://img.shields.io/github/repo-size/William-Krug/Cullen-Salary-Calculator.svg?style=flat-square)
 ![TOP_LANGUAGE](https://img.shields.io/github/languages/top/William-Krug/Cullen-Salary-Calculator.svg?style=flat-square)
-![FORKS](https://img.shields.io/github/forks/William-Krug/Cullen-Salary-Calculator.svg?style=social)
 
 # Cullen Salary Calculator
 
@@ -27,18 +26,12 @@ The app was created with a HTML inputs, JavaScript, and jQuery.
 
 ## Installation
 
-How do you get your application up and running? This is a step by step list for how another developer could get this project up and running. The good target audience in terms of knowledge, would be a fellow Primer from another cohort being able to spin up this project. Note that you do not need a paragraph here to intro Installation. It should be step-by-step.
-
-If your application has secret keys (for example -- Twilio), make sure you tell them how to set that up, both in getting the key and then what to call it in the `.env` file.
-
 1. `Fork` the repository
 2. `clone` a copy to the desired workspace
 3. Traverse to the newly cloned directory in your terminal
 4. Run `open index.html` in your terminal
 
 ## Usage
-
-How does someone use this application? Tell a user story here.
 
 1. Enter Employee Information: First Name, Last Name, Employee ID, Job Title, and Annual Salary, into the corresponding input fields in the **Add Employee** field
 2. Click on the **Add Employee** button
@@ -91,7 +84,7 @@ If you have suggestions or issues, please email me at [william.p.krug@gmail.com]
   - [x] red background if monthly costs exceed $20,000
 - [x] create table
 - [x] delete button that removes employee from DOM
-- [ ] README.md write up
+- [x] README.md write up
 
 ## Stretch To Do
 
