@@ -15,6 +15,7 @@ function onReady() {
   console.log('We have jQuery');
   displayMonthlyCosts();
   $(document).on('click', '#addEmpSubmitBtn', addEmployee);
+  $(document).on('click', '#deleteButton', deleteEmployee);
 }
 
 /**
@@ -101,7 +102,7 @@ function displayEmployees(employeeList) {
         <td>${employee.employeeID}</td>
         <td>${employee.title}</td>
         <td>${dollarFormat.format(employee.annualSalary)}</td>
-        <td></td>
+        <td><button id="deleteButton">Delete</button></td>
       <tr>
     `);
   }
@@ -175,5 +176,12 @@ function displayMonthlyCosts(monthlyCosts = 6083.33) {
     console.log('in displayMonthlyCosts()');
     console.log('\tmonthly cost in:', monthlyCosts);
     console.log('\tmonthly costs out:', monthlyCostsDollar);
+  }
+}
+
+function deleteEmployee() {
+  // Debugging and Testing script
+  if (verbose) {
+    console.log('in deleteEmployee()');
   }
 }

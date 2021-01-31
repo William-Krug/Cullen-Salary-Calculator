@@ -36,3 +36,4 @@ Additional README details can be found [here](https://github.com/PrimeAcademy/re
 - [ ] update total after employee is "deleted"
   - [ ] .text() and .data() are helpful
 - [ ] make input fields required
+- [ ] annual salary min/max
