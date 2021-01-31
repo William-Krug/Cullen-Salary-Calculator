@@ -1,4 +1,3 @@
-![MIT LICENSE](https://img.shields.io/github/license/William-Krug/Cullen-Salary-Calculator.svg?style=flat-square)
 ![REPO SIZE](https://img.shields.io/github/repo-size/William-Krug/Cullen-Salary-Calculator.svg?style=flat-square)
 ![TOP_LANGUAGE](https://img.shields.io/github/languages/top/William-Krug/Cullen-Salary-Calculator.svg?style=flat-square)
 
@@ -47,12 +46,6 @@ The app was created with a HTML inputs, JavaScript, and jQuery.
 - JavaScript
 - jQuery
 
-## License
-
-[MIT](https://choosealicense.com/licenses/mit/)
-
-_Note, include this only if you have a license file. GitHub will generate one for you if you want!_
-
 ## Acknowledgement
 
 Thanks to [Prime Digital Academy](www.primeacademy.io) who equipped and helped me to make this application a reality.
@@ -88,7 +81,7 @@ If you have suggestions or issues, please email me at [william.p.krug@gmail.com]
 
 ## Stretch To Do
 
-- [ ] CSS Styling
+- [x] CSS Styling
 - [ ] update total after employee is "deleted"
   - [ ] .text() and .data() are helpful
 - [ ] make input fields required
