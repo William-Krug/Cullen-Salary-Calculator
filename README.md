@@ -17,14 +17,11 @@ Directly above this is how long it took you to develop the project. Your project
 
 ## Screen Shot
 
-![GitHub Logo](/images/logo.png)
-Format: ![Alt Text](https://github.com/William-Krug/Cullen-Salary-Calculator/blob/master/starting-screen.png)
+![Start Screen](https://github.com/William-Krug/Cullen-Salary-Calculator/blob/master/starting-screen.png)
 
-![GitHub Logo](/images/logo.png)
-Format: ![Alt Text](https://github.com/William-Krug/Cullen-Salary-Calculator/blob/master/monthly-costs-below-%2420%2C000.png)
+![Total Monthly Costs below $20,000](https://github.com/William-Krug/Cullen-Salary-Calculator/blob/master/monthly-costs-below-%2420%2C000.png)
 
-![GitHub Logo](/images/logo.png)
-Format: ![Alt Text](https://github.com/William-Krug/Cullen-Salary-Calculator/blob/master/monthly-costs-above-%2420%2C000.png)
+![Total Monthly Costs above $20,000](https://github.com/William-Krug/Cullen-Salary-Calculator/blob/master/monthly-costs-above-%2420%2C000.png)
 
 ### Prerequisites
 
