@@ -17,6 +17,9 @@ Directly above this is how long it took you to develop the project. Your project
 
 ## Screen Shot
 
+![GitHub Logo](/images/logo.png)
+Format: ![Alt Text](url)
+
 Include one or two screen shots of your project here (optional). Remove if unused.
 
 ### Prerequisites
