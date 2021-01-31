@@ -9,11 +9,9 @@
 
 _Duration: 3 Days_
 
-This app is a simple salary calculator. A Manager or HR Specialist can add an employee by the added form, see a list of all employees and get a breakdown of what the combined monthly salary is for all employees.
+This app is a simple salary calculator. A Manager or HR Specialist can add an employee by the added form, see a list of all employees and get a breakdown of what the combined monthly salary is for all employees. If the "Total Monthly Cost" exceeds $20,000, the dollar amount will have a RED background
 
 The app was created with a HTML inputs, JavaScript, and jQuery.
-
-Directly above this is how long it took you to develop the project. Your project description goes here. What problem did you solve? How did you solve it?
 
 ## Screen Shot
 
@@ -25,10 +23,7 @@ Directly above this is how long it took you to develop the project. Your project
 
 ### Prerequisites
 
-Link to software that is required to install the app (e.g. node).
-
-- [Node.js](https://nodejs.org/en/)
-- List other prerequisites here
+- No prerequisites are needed for this app
 
 ## Installation
 
@@ -36,27 +31,28 @@ How do you get your application up and running? This is a step by step list for 
 
 If your application has secret keys (for example -- Twilio), make sure you tell them how to set that up, both in getting the key and then what to call it in the `.env` file.
 
-1. Create a database named `your database name`,
-2. The queries in the `tables.sql` file are set up to create all the necessary tables and populate the needed data to allow the application to run correctly. The project is built on [Postgres](https://www.postgresql.org/download/), so you will need to make sure to have that installed. We recommend using Postico to run those queries as that was used to create the queries,
-3. Open up your editor of choice and run an `npm install`
-4. Run `npm run server` in your terminal
-5. Run `npm run client` in your terminal
-6. The `npm run client` command will open up a new browser tab for you!
+1. `Fork` the repository
+2. `clone` a copy to the desired workspace
+3. Traverse to the newly cloned directory in your terminal
+4. Run `open index.html` in your terminal
 
 ## Usage
 
 How does someone use this application? Tell a user story here.
 
-1. xxx
-2. xxx
-3. xxx
-4. xxx
-5. xxx
-6. xxx
+1. Enter Employee Information: First Name, Last Name, Employee ID, Job Title, and Annual Salary, into the corresponding input fields in the **Add Employee** field
+2. Click on the **Add Employee** button
+3. Repeat Steps 1 & 2 until all desired employees have been entered into the system
+4. A table will appear in the **Employees** section, breaking down all of the pertinent information
+5. If the **total Monthly Cost** exceeds $20,000, the background of the dollar amount will turn red
+6. Click the **Delete** button at the end of the row to remove the corresponding employee, and their information, from the table
 
 ## Built With
 
-List technologies and frameworks here
+- HTML
+- CSS
+- JavaScript
+- jQuery
 
 ## License
 
@@ -66,11 +62,13 @@ _Note, include this only if you have a license file. GitHub will generate one fo
 
 ## Acknowledgement
 
-Thanks to [Prime Digital Academy](www.primeacademy.io) who equipped and helped me to make this application a reality. (Thank your people)
+Thanks to [Prime Digital Academy](www.primeacademy.io) who equipped and helped me to make this application a reality.
+
+A special shout out goes to the **Cullen Cohort** whose support and guidance saved innumerable hours on this project.
 
 ## Support
 
-If you have suggestions or issues, please email me at [youremail@whatever.com](www.google.com)
+If you have suggestions or issues, please email me at [william.p.krug@gmail.com](william.p.krug@gmail.com)
 
 ## To Do
 
