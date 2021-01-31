@@ -17,6 +17,10 @@ h2 {
   font-size: 36px;
 }
 
+.sixteen {
+  font-size: 16px;
+}
+
 .add-employee {
   padding: 20px;
   margin: 20px;
@@ -75,27 +79,29 @@ thead th {
   padding: 5px;
 }
 
-tbody {
+#deleteButton {
+  background-color: #fc6862;
+  color: #ffffff;
+}
+
+.width-one {
+  width: 300px;
   border: 1px solid #000000;
   border-collapse: collapse;
   padding: 5px;
 }
 
-tbody tr {
+.width-two {
+  width: 200px;
   border: 1px solid #000000;
   border-collapse: collapse;
   padding: 5px;
 }
 
-tbody tr td {
+.width-three {
+  width: 100px;
   border: 1px solid #000000;
   border-collapse: collapse;
   padding: 5px;
-}
-
-tfoot {
-  border: 1px solid #000000;
-  border-collapse: collapse;
-  padding: 5px;
-  height: 25px;
+  text-align: center;
 }

@@ -97,12 +97,12 @@ function displayEmployees(employeeList) {
   for (employee of employeeList) {
     $employeeTable.append(`
       <tr>
-        <td>${employee.firstName}</td>
-        <td>${employee.lastName}</td>
-        <td>${employee.employeeID}</td>
-        <td>${employee.title}</td>
-        <td>${dollarFormat.format(employee.annualSalary)}</td>
-        <td><button id="deleteButton">Delete</button></td>
+        <td class="width-one">${employee.firstName}</td>
+        <td class="width-one">${employee.lastName}</td>
+        <td class="width-two">${employee.employeeID}</td>
+        <td class="width-one">${employee.title}</td>
+        <td class="width-two">${dollarFormat.format(employee.annualSalary)}</td>
+        <td class="width-three"><button id="deleteButton">Delete</button></td>
       <tr>
     `);
   }
