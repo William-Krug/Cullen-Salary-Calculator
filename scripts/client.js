@@ -184,10 +184,14 @@ function displayMonthlyCosts(monthlyCosts = 6083.33) {
  * the delete button is pressed
  */
 function deleteEmployee() {
+  // Target <tr> element associated with employee and remove the row
   $(this).parent().parent().remove();
+  // Update employees array and remove the deleted employee object
+
   // Debugging and Testing script
   if (verbose) {
     console.log('in deleteEmployee()');
     console.log('\tparent element:', $(this).parent().parent());
+    console.log('\t', $(this).parent().parent().text());
   }
 }
