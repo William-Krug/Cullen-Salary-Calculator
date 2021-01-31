@@ -79,6 +79,10 @@ thead th {
   padding: 5px;
 }
 
+#employeeTable tr:nth-child(even) {
+  background-color: lightgreen;
+}
+
 #deleteButton {
   background-color: #fc6862;
   color: #ffffff;
@@ -88,20 +92,19 @@ thead th {
   width: 300px;
   border: 1px solid #000000;
   border-collapse: collapse;
-  padding: 5px;
+  padding: 5px 5px 5px 15px;
 }
 
 .width-two {
   width: 200px;
   border: 1px solid #000000;
   border-collapse: collapse;
-  padding: 5px;
+  padding: 5px 5px 5px 15px;
 }
 
 .width-three {
   width: 100px;
   border: 1px solid #000000;
   border-collapse: collapse;
-  padding: 5px;
   text-align: center;
 }
