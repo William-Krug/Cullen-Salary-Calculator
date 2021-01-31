@@ -179,9 +179,15 @@ function displayMonthlyCosts(monthlyCosts = 6083.33) {
   }
 }
 
+/**
+ * Function removes employee from the table (and associated list) when
+ * the delete button is pressed
+ */
 function deleteEmployee() {
+  $(this).parent().parent().remove();
   // Debugging and Testing script
   if (verbose) {
     console.log('in deleteEmployee()');
+    console.log('\tparent element:', $(this).parent().parent());
   }
 }

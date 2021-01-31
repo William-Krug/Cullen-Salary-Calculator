@@ -28,7 +28,7 @@ Additional README details can be found [here](https://github.com/PrimeAcademy/re
   - [x] append to DOM
   - [x] red background if monthly costs exceed $20,000
 - [x] create table
-- [ ] delete button that removes employee from DOM
+- [x] delete button that removes employee from DOM
 
 ## Stretch To Do
 
