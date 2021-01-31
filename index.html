@@ -14,65 +14,10 @@
     </header>
 
     <main>
-      <div>
-        <h2>Add Employee</h2>
-        <!-- <form id="addEmployeeForm" action="">
-          <div>
-            <label for="firstName">First Name:</label>
-            <input
-              type="text"
-              name="firstName"
-              id="firstNameInput"
-              placeholder="Jenny"
-              required
-            />
-          </div>
-          <div>
-            <label for="lastName">Last Name:</label>
-            <input
-              type="text"
-              name="lastName"
-              id="lastNameInput"
-              placeholder="Tutone"
-              required
-            />
-          </div>
-          <div>
-            <label for="employeeID">Employee ID#:</label>
-            <input
-              type="text"
-              name="employeeID"
-              id="employeeIDInput"
-              placeholder="8675309"
-              required
-            />
-          </div>
-          <div>
-            <label for="employeeTitle">Employee Title:</label>
-            <input
-              type="text"
-              name="employeeTitle"
-              id="employeeTitleInput"
-              placeholder="Project Manager of Rock"
-              required
-            />
-          </div>
-          <div>
-            <label for="annualSalary">Annual Salary:</label>
-            <input
-              type="number"
-              name="annualSalary"
-              id="annualSalaryInput"
-              placeholder="$73,000"
-              required
-            />
-          </div>
-          <div>
-            <input type="submit" value="Add Employee" id="addEmpSubmitBtn" />
-          </div>
-        </form> -->
+      <div class="add-employee">
+        <h2 class="thirty-six">Add Employee</h2>
         <form id="addEmployeeForm" action="">
-          <div>
+          <div class="add-inputs">
             <input
               type="text"
               name="firstName"
@@ -106,22 +51,23 @@
               name="annualSalary"
               id="annualSalaryInput"
               placeholder="Annual Salary"
+              min="0"
               required
             />
           </div>
-          <div>
+          <div class="add-submit">
             <input type="submit" value="Add Employee" id="addEmpSubmitBtn" />
           </div>
         </form>
       </div>
-      <div>
-        <h2>Employees</h2>
+      <div class="display-employees">
+        <h2 class="thirty-six">Employees</h2>
         <table>
           <thead>
             <tr>
               <th>First Name</th>
               <th>Last Name</th>
-              <th>Employee ID Name</th>
+              <th>Employee ID</th>
               <th>Job Title</th>
               <th>Annual Salary</th>
               <th></th>

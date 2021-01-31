@@ -16,14 +16,14 @@ Additional README details can be found [here](https://github.com/PrimeAcademy/re
   - [x] employee ID number
   - [x] employee job title
   - [x] employee annual salary
-- [ ] Submit button
+- [x] Submit button
   - [x] captures data from form and stores in variables
   - [x] creates employee object
   - [x] pushes object onto array
   - [x] calculate annual costs
   - [x] render information to DOM
   - [x] clear input fields
-- [ ] calculate monthly costs
+- [x] calculate monthly costs
   - [x] calculate monthly costs
   - [x] append to DOM
   - [x] red background if monthly costs exceed $20,000
