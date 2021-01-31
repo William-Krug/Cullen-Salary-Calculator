@@ -18,9 +18,13 @@ Directly above this is how long it took you to develop the project. Your project
 ## Screen Shot
 
 ![GitHub Logo](/images/logo.png)
-Format: ![Alt Text](url)
+Format: ![Alt Text](https://github.com/William-Krug/Cullen-Salary-Calculator/blob/master/starting-screen.png)
 
-Include one or two screen shots of your project here (optional). Remove if unused.
+![GitHub Logo](/images/logo.png)
+Format: ![Alt Text](https://github.com/William-Krug/Cullen-Salary-Calculator/blob/master/monthly-costs-below-%2420%2C000.png)
+
+![GitHub Logo](/images/logo.png)
+Format: ![Alt Text](https://github.com/William-Krug/Cullen-Salary-Calculator/blob/master/monthly-costs-above-%2420%2C000.png)
 
 ### Prerequisites
 
